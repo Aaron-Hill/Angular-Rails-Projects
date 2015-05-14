@@ -11,6 +11,9 @@
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css styles/main.css -->
+    <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
@@ -25,7 +28,71 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-view></div>
+    <div class="header">
+      <div class="container">
+        <img src="../img/sherlock.jpeg" width="180" height="34">
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="container">
+        <div class="content">
+          <div class="row">
+            
+            <div class="col-md-3" class="series_img">
+            </div>
+            
+            <div class="col-md-6">
+              <h1 class="series"></h1>
+              <h2 class="episode"></h2>
+              <p class="description"></p>
+            </div>
+
+            <div class="col-md-3">
+              <ul class="list-group">
+                <li class="list-group-item"><span>Date:</span>  </li>
+                <li class="list-group-item"><span>On air:</span>  </li>
+                <li class="list-group-item"><span>Time:</span>  </li>
+                <li class="list-group-item"><span>Season:</span>  </li>
+                <li class="list-group-item"><span>Genre:</span>  </li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h3>Bolt</h3>
+            <ul>
+              <li>Careers</li>
+              <li>Terms</li>
+              <li>Help</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3>More Bolt</h3>
+            <ul>
+              <li>Gift Cards</li>
+              <li>Trailers</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3>News</h3>
+            <ul>
+              <li>Blog</li>
+              <li>Twitter</li>
+              <li>YouTube</li>
+              <li>Google+</li>
+              <li>Facebook</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
